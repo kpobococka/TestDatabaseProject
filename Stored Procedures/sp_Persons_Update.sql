@@ -8,7 +8,7 @@ AS
 BEGIN
 	SET NOCOUNT ON;
 
-	UPDATE [dbo].Persons] 
+	UPDATE [dbo].[Persons] 
 		SET  [Surname] = @Surname
 			,[Name] = @Name
 			,[Patronymic] = @Patronymic

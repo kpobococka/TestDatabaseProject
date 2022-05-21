@@ -8,7 +8,7 @@ AS
 BEGIN 
 	SET NOCOUNT ON;
 
-	INSERT INTO [dbo].Persons] 
+	INSERT INTO [dbo].[Persons] 
 	([Id]
 	,[Surname]
 	,[Name]
