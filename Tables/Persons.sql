@@ -7,6 +7,7 @@
     [DateOfBirth] DATE NOT NULL, 
     [DateInput] DATETIME NULL CONSTRAINT [DF_Persons_DateInput] DEFAULT (getdate()), 
     [DateCorrection] DATETIME NOT NULL CONSTRAINT [DF_Persons_DateCorrection] DEFAULT (getdate()),
+    [S] NVARCHAR(50) NULL, 
     CONSTRAINT [PK_Persons] PRIMARY KEY ([Id])
 )
 
@@ -82,3 +83,12 @@ EXEC sp_addextendedproperty @name = N'MS_Description',
     @level1name = N'Persons',
     @level2type = N'COLUMN',
     @level2name = N'DateCorrection'
+GO
+EXEC sp_addextendedproperty @name = N'MS_Description',
+    @value = N's',
+    @level0type = N'SCHEMA',
+    @level0name = N'dbo',
+    @level1type = N'TABLE',
+    @level1name = N'Persons',
+    @level2type = N'COLUMN',
+    @level2name = N'S'
